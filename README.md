@@ -1,104 +1,85 @@
+<div align="center">
 
-# 🖥️ Windows 11 Wi-Fi Connectivity Troubleshooting
+<img src="assets/windows-wifi-terminal-banner.png" alt="PRAMIREZ-TECH System Diagnostics — Windows 11 Wi-Fi Connectivity Troubleshooting, resolved" width="100%" />
 
-![Windows](https://img.shields.io/badge/Windows-11-0078D4?style=for-the-badge&logo=windows11&logoColor=white)
-![Category](https://img.shields.io/badge/IT-Troubleshooting-00C896?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Resolved-brightgreen?style=for-the-badge)
+<br>
 
----
+[![Windows 11](https://img.shields.io/badge/WINDOWS-11-0A8CF0?style=for-the-badge&logo=windows11&logoColor=white&labelColor=111827)](https://www.microsoft.com/windows)
+![Case Study](https://img.shields.io/badge/CASE_STUDY-IT_TROUBLESHOOTING-13C7DB?style=for-the-badge&labelColor=111827)
+![Resolution](https://img.shields.io/badge/STATUS-RESOLVED-26C281?style=for-the-badge&labelColor=111827)
 
-## 📋 Project Overview
+`[ SYSTEM DIAGNOSTICS ]` · `[ HP PAVILION ]` · `[ INTEL WI-FI 6 AX201 ]`
 
-This case study documents my experience diagnosing and
-resolving a Windows 11 wireless connectivity issue on
-my personal laptop.
-
-After a Windows update, the Wi-Fi option disappeared
-from my computer, preventing me from connecting
-to wireless networks.
-
-I investigated the issue through Windows diagnostic
-tools, driver troubleshooting, technical research,
-and additional system configuration checks.
-
-The problem was ultimately resolved by identifying
-and re-enabling a disabled wireless network adapter.
+</div>
 
 ---
 
-## 💻 System Environment
+## 🖥️ `01 // PROJECT OVERVIEW`
+
+This case study documents my experience diagnosing and resolving a Windows 11 wireless connectivity issue on my personal laptop.
+
+After a Windows update, the Wi-Fi option disappeared from my computer, preventing me from connecting to wireless networks.
+
+I investigated the issue through Windows diagnostic tools, driver troubleshooting, technical research, and additional system configuration checks.
+
+**The problem was ultimately resolved by identifying and re-enabling a disabled wireless network adapter.**
+
+---
+
+## ⚙️ `02 // SYSTEM ENVIRONMENT`
 
 | Component | Details |
-|-----------|---------|
-| Device | HP Pavilion Laptop |
-| Operating System | Windows 11 |
-| Wireless Adapter | Intel(R) Wi-Fi 6 AX201 |
-| Issue | Missing Wi-Fi option |
-| Resolution | Re-enabled disabled Wi-Fi adapter |
+|:---|:---|
+| **Device** | HP Pavilion Laptop |
+| **Operating System** | Windows 11 |
+| **Wireless Adapter** | Intel(R) Wi-Fi 6 AX201 |
+| **Issue** | Missing Wi-Fi option |
+| **Resolution** | Re-enabled disabled Wi-Fi adapter |
 
 ---
 
-## 🔍 Problem Description
+## ⚠️ `03 // PROBLEM DESCRIPTION`
 
-Following a Windows update, the Wi-Fi option
-disappeared from my laptop's network settings.
+Following a Windows update, the Wi-Fi option disappeared from my laptop's network settings.
 
-### Symptoms
+**Symptoms**
 
 - Wi-Fi toggle was missing from Windows.
 - Wireless network connections were unavailable.
-- The wireless adapter was still visible in
-  Device Manager.
-- Restarting and reinstalling drivers did not
-  restore wireless connectivity.
+- The wireless adapter was still visible in Device Manager.
+- Restarting and reinstalling drivers did not restore wireless connectivity.
 
-Although Windows detected the wireless hardware,
-the Wi-Fi functionality remained unavailable.
+Although Windows detected the wireless hardware, the Wi-Fi functionality remained unavailable.
 
 ---
 
-## 🛠️ Troubleshooting Process
+## 🔎 `04 // TROUBLESHOOTING LOG`
 
-### Step 1: Investigating Device Manager
+### `STEP 01 > Investigating Device Manager`
 
-Opened Windows Device Manager to inspect the
-installed network adapters.
+Opened Windows Device Manager to inspect the installed network adapters.
 
 Located the Intel(R) Wi-Fi 6 AX201 adapter.
 
-**Finding:**
+**Finding:** Windows detected the wireless adapter, indicating that the device was recognized by the operating system. However, Wi-Fi remained unavailable.
 
-Windows detected the wireless adapter, indicating
-that the device was recognized by the operating system.
+**Result:** `UNRESOLVED`
 
-However, Wi-Fi remained unavailable.
+### `STEP 02 > Wireless Driver Installation`
 
-**Result:** Issue unresolved.
+Investigated whether the problem was related to an outdated or malfunctioning wireless driver.
 
----
+Installed an Intel wireless driver and restarted the laptop.
 
-### Step 2: Wireless Driver Installation
+**Result:** The Wi-Fi option remained missing.
 
-Investigated whether the problem was related
-to an outdated or malfunctioning wireless driver.
+**Status:** `UNSUCCESSFUL`
 
-Installed an Intel wireless driver and
-restarted the laptop.
+### `STEP 03 > Driver Removal and Reinstallation`
 
-**Result:**
+Attempted to resolve the issue by removing the wireless adapter through Device Manager.
 
-The Wi-Fi option remained missing.
-
-**Status:** Unsuccessful.
-
----
-
-### Step 3: Driver Removal and Reinstallation
-
-Attempted to resolve the issue by removing
-the wireless adapter through Device Manager.
-
-Actions performed:
+**Actions performed:**
 
 1. Opened Device Manager.
 2. Located the wireless network adapter.
@@ -107,33 +88,21 @@ Actions performed:
 5. Restarted the laptop.
 6. Checked Device Manager again.
 
-**Result:**
+**Result:** The adapter reappeared in Device Manager, but the Wi-Fi option was still unavailable.
 
-The adapter reappeared in Device Manager,
-but the Wi-Fi option was still unavailable.
+**Status:** `UNSUCCESSFUL`
 
-**Status:** Unsuccessful.
+### `STEP 04 > Windows Network Reset`
 
----
+Attempted to restore network functionality using Windows Network Reset.
 
-### Step 4: Windows Network Reset
+After performing the reset, I restarted the computer and checked whether Wi-Fi was available.
 
-Attempted to restore network functionality
-using Windows Network Reset.
+**Result:** The missing Wi-Fi option was not restored.
 
-After performing the reset, I restarted
-the computer and checked whether Wi-Fi
-was available.
+**Status:** `UNSUCCESSFUL`
 
-**Result:**
-
-The missing Wi-Fi option was not restored.
-
-**Status:** Unsuccessful.
-
----
-
-### Step 5: Technical Research
+### `STEP 05 > Technical Research`
 
 Continued investigating the issue using:
 
@@ -142,44 +111,36 @@ Continued investigating the issue using:
 - AI-assisted technical research
 - Windows networking information
 
-Explored additional possible causes and
-troubleshooting methods.
+Explored additional possible causes and troubleshooting methods.
 
-I also considered Safe Mode troubleshooting
-but avoided proceeding after encountering
-a BitLocker-related warning.
+I also considered Safe Mode troubleshooting but avoided proceeding after encountering a BitLocker-related warning.
 
-This was an important consideration because
-I wanted to avoid unnecessary risks to
-my personal files and system configuration.
+This was an important consideration because I wanted to avoid unnecessary risks to my personal files and system configuration.
 
 ---
 
-## ✅ Root Cause & Resolution
+## ✅ `05 // ROOT CAUSE & RESOLUTION`
 
 ### Root Cause
 
-The wireless network adapter was disabled
-in Windows Network Connections.
+The wireless network adapter was **disabled in Windows Network Connections**.
 
-Although the adapter was detected in
-Device Manager, its disabled state prevented
-Wi-Fi connectivity from being available.
+Although the adapter was detected in Device Manager, its disabled state prevented Wi-Fi connectivity from being available.
 
 ### Resolution
 
-The issue was resolved by accessing
-Windows Network Connections and
-re-enabling the wireless adapter.
+The issue was resolved by accessing Windows Network Connections and re-enabling the wireless adapter.
 
 **Steps performed:**
 
-1. Pressed `Windows + R` to open Run.
+1. Pressed **Windows + R** to open Run.
 2. Entered the following command:
 
-   `ncpa.cpl`
+   ```text
+   ncpa.cpl
+   ```
 
-3. Pressed Enter to open Network Connections.
+3. Pressed **Enter** to open Network Connections.
 4. Located the disabled Wi-Fi adapter.
 5. Right-clicked the adapter.
 6. Selected **Enable**.
@@ -187,50 +148,33 @@ re-enabling the wireless adapter.
 
 ### Final Result
 
-**Status: RESOLVED ✅**
+> ✅ **STATUS: RESOLVED** — Wireless connectivity was restored after re-enabling the network adapter.
 
-Wireless connectivity was restored
-after re-enabling the network adapter.
-
-The resolution did not require additional
-driver installation or hardware replacement.
+The resolution did not require additional driver installation or hardware replacement.
 
 ---
 
-## 🧠 Technical Explanation
+## 🧠 `06 // TECHNICAL EXPLANATION`
 
-Windows Device Manager and Network Connections
-provide different ways to inspect and manage
-networking components.
+Windows Device Manager and Network Connections provide different ways to inspect and manage networking components.
 
-**Device Manager**
+| Windows Tool | Function |
+|:---|:---|
+| **Device Manager** | Displays installed hardware and associated device drivers. |
+| **Network Connections** | Displays network interfaces and allows users to manage their connection status. |
 
-Displays installed hardware and associated
-device drivers.
+In this case, the wireless adapter was detected by Windows but was disabled in Network Connections.
 
-**Network Connections**
+Re-enabling the adapter restored its functionality.
 
-Displays network interfaces and allows
-users to manage their connection status.
-
-In this case, the wireless adapter was
-detected by Windows but was disabled
-in Network Connections.
-
-Re-enabling the adapter restored
-its functionality.
-
-This demonstrated why checking both
-hardware detection and network adapter
-configuration is important during
-connectivity troubleshooting.
+This demonstrated why checking both hardware detection and network adapter configuration is important during connectivity troubleshooting.
 
 ---
 
-## 📚 Skills Demonstrated
+## 🛠️ `07 // SKILLS DEMONSTRATED`
 
 | Skill | Application |
-|-------|-------------|
+|:---|:---|
 | Windows Troubleshooting | Investigated missing Wi-Fi functionality |
 | Device Manager | Inspected wireless hardware and drivers |
 | Driver Troubleshooting | Tested driver installation and removal |
@@ -241,74 +185,51 @@ connectivity troubleshooting.
 
 ---
 
-## 💡 Lessons Learned
+## 💡 `08 // LESSONS LEARNED`
 
-### 1. Check Simple Solutions First
+### `01 > Check Simple Solutions First`
 
-A disabled network adapter can cause
-connectivity problems even when
-Windows recognizes the hardware.
+A disabled network adapter can cause connectivity problems even when Windows recognizes the hardware.
 
-Checking adapter status early may help
-avoid unnecessary troubleshooting.
+Checking adapter status early may help avoid unnecessary troubleshooting.
 
-### 2. Hardware Detection Does Not Guarantee Connectivity
+### `02 > Hardware Detection Does Not Guarantee Connectivity`
 
-An adapter appearing in Device Manager
-does not necessarily mean that the
-network connection is enabled.
+An adapter appearing in Device Manager does not necessarily mean that the network connection is enabled.
 
-### 3. Document Troubleshooting Results
+### `03 > Document Troubleshooting Results`
 
-Recording each attempted solution
-helps identify which actions were
-successful and which were not.
+Recording each attempted solution helps identify which actions were successful and which were not.
 
-### 4. Research Is Part of Troubleshooting
+### `04 > Research Is Part of Troubleshooting`
 
-Technical troubleshooting frequently
-requires consulting documentation,
-exploring potential causes,
-and learning unfamiliar system components.
+Technical troubleshooting frequently requires consulting documentation, exploring potential causes, and learning unfamiliar system components.
 
-### 5. Consider System Risks
+### `05 > Consider System Risks`
 
-Advanced troubleshooting steps should
-be evaluated carefully, especially when
-they involve encryption, recovery settings,
-or personal data.
+Advanced troubleshooting steps should be evaluated carefully, especially when they involve encryption, recovery settings, or personal data.
 
 ---
 
-## 🎯 Conclusion
+## 🏁 `09 // CONCLUSION`
 
-This experience provided practical exposure
-to Windows networking, driver management,
-and troubleshooting techniques.
+This experience provided practical exposure to Windows networking, driver management, and troubleshooting techniques.
 
-The issue initially appeared to involve
-wireless drivers or a Windows update,
-but the solution was ultimately found
-within Windows Network Connections.
+The issue initially appeared to involve wireless drivers or a Windows update, but the solution was ultimately found within Windows Network Connections.
 
-By using `ncpa.cpl` to locate and enable
-the disabled wireless adapter, I was
-able to restore Wi-Fi connectivity.
+By using `ncpa.cpl` to locate and enable the disabled wireless adapter, I was able to restore Wi-Fi connectivity.
 
-The experience reinforced the importance
-of systematic investigation, technical
-research, and understanding how different
-Windows components interact.
+The experience reinforced the importance of systematic investigation, technical research, and understanding how different Windows components interact.
 
 ---
 
 <div align="center">
 
-### 🔗 Connect With Me
+### `> END OF DIAGNOSTIC REPORT_`
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pramirez-tech)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pamela-ramirez12)
+[![GitHub](https://img.shields.io/badge/GITHUB-pramirez--tech-1A2232?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pramirez-tech)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pamela-ramirez12)
 
-**Pamela Ramirez | Computer Science Undergraduate**
+**Pamela Ramirez · Computer Science Undergraduate**
 
 </div>
